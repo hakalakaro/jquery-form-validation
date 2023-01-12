@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+    <script src="script.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.js"></script>
+</head>
+<body>
+    <div class="formi">
+        <h1>Contact our business</h1>
+        <h3>Please use the form below to contact us.</h3>
+        <h1>Contact form</h1>
+        <form id="basic-form" name="basic-form" method="post">
+            <p>
+                <label for="etunimi">Name</label><br />
+                <input id="etunimi" name="etunimi" class="form-control required">
+            </p>
+            <p>
+                <label for="sukunimi">Lastname</label><br />
+                <input id="sukunimi" name="sukunimi" class="form-control required">
+            </p>
+            <p>
+                <label for="email">Email</label><br />
+                <input id="email" name="email" class="form-control required email">
+            </p>
+            <p>
+                <label for="osoite">Address</label><br />
+                <input id="osoite" name="osoite" class="form-control required">
+            </p>
+            <p>
+                <label for="postinumero">Postal Code</label><br />
+                <input id="postinumero" name="postinumero" class="form-control required">
+            </p>
+            <p>
+                <label for="postitoimipaikka">Post Office</label><br />
+                <input id="postitoimipaikka" name="postitoimipaikka" class="form-control required">
+            </p>
+            <p>
+                <label for="puhelin">Phone</label><br />
+                <input id="puhelin" name="puhelin" class="form-control required">
+            </p>
+            <p>
+                <label for="pvm">Date</label><br />
+                <input id="datepicker" name="pvm" class="form-control required">
+            </p>
+            <p>
+                <label for="viesti">*Message</label><br />
+                <textarea id="viesti" name="viesti"></textarea>
+            </p>
+            <p>
+                <input class="submit" type="submit" value="Send">
+            </p>
+        </form>
+    </div>
+</body>
+</html>
